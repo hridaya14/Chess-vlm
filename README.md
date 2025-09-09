@@ -14,7 +14,7 @@ This project explores **fine-tuning a lightweight language model (unsloth/LFM2-3
 
 - The model is trained to generate **UCI-standard moves** for compatibility with chess engines.  
 - A **PyQt5 chessboard UI** is included, allowing you to play directly against the fine-tuned model.  
-- Since it’s based on a **compact VLM**, it can run in **mobile apps or lightweight environments**.  
+- Since it’s based on a **compact SLM**, it can run in **mobile apps or lightweight environments**.  
 - The fine-tuning pipeline leverages **LoRA adapters** for efficient training, with **wandb** integration for experiment tracking, and **Modal** for scalable deployment/monitoring.  
 
 ---
@@ -37,7 +37,7 @@ This project explores **fine-tuning a lightweight language model (unsloth/LFM2-3
 ```
 ├── app/                     # PyQt5 chessboard app
 │   └── main.py
-├── vlm/                     # Datasets and finetuning scripts
+├── slm/                     # Datasets and finetuning scripts
 │   ├── data/raw/            # PGN dataset (Nakamura games)
 │   ├── scripts/             # Data + merge scripts
 │   ├── Makefile             # Training/evaluation automation
@@ -54,7 +54,7 @@ This project explores **fine-tuning a lightweight language model (unsloth/LFM2-3
 ### 1️⃣ Clone the repo  
 ```bash
 git clone https://github.com/hridaya14/Chess-vlm.git
-cd hikaru-llm
+cd Chess-vlm
 ```
 
 ### 2️⃣ Install dependencies  
