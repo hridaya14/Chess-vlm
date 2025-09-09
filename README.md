@@ -25,7 +25,7 @@ This project explores **fine-tuning a lightweight language model (unsloth/LFM2-3
 - ♟️ Generates valid **UCI chess moves**.  
 - 🖥️ Interactive **PyQt5 Chessboard UI**.  
 - 📱 Deployable in **mobile or desktop apps**.  
-- 🔧 Modular design: fine-tuning logic is separate (`vlm/`), app runs independently (`app/`).  
+- 🔧 Modular design: fine-tuning logic is separate (`slm/`), app runs independently (`app/`).  
 - ⚡ LoRA-based fine-tuning for lightweight and efficient adaptation.  
 - 📊 Experiment logging & monitoring with **wandb**.  
 - ☁️ Scalable training/inference via **Modal**.  
@@ -69,12 +69,12 @@ uv sync
 
 ## 🏋️ Fine-Tuning Instructions  
 
-All training steps are automated via the **Makefile** in the `vlm/` directory.
+All training steps are automated via the **Makefile** in the `slm/` directory.
 
 ### 📥 Download Hikaru’s games  
 
 ```bash
-cd vlm
+cd slm
 make download-games
 ```
 
@@ -134,7 +134,7 @@ This will launch the **PyQt5 chessboard**, where you can play against the Hikaru
 ### Lint & Format  
 
 ```bash
-cd vlm
+cd slm
 make lint
 make lint-fix
 make format
