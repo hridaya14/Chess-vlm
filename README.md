@@ -10,7 +10,7 @@
 
 ## 📖 Overview  
 
-This project explores **fine-tuning a lightweight vision-language model (unsloth/LFM2-350M)** to emulate the chess-playing style of **Grandmaster Hikaru Nakamura**.  
+This project explores **fine-tuning a lightweight language model (unsloth/LFM2-350M)** to emulate the chess-playing style of **Grandmaster Hikaru Nakamura**.  
 
 - The model is trained to generate **UCI-standard moves** for compatibility with chess engines.  
 - A **PyQt5 chessboard UI** is included, allowing you to play directly against the fine-tuned model.  
